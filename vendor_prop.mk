@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Pixel identification
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.build.fingerprint=google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
