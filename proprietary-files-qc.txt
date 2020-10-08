@@ -23,20 +23,20 @@ vendor/lib64/libacdbrtac.so|a60a1a35291e66a3e848362421a3131df849dd44
 vendor/lib64/libadiertac.so|e57093978640b9c8a1dff2c17706bb54b0fef00a
 vendor/lib64/libaudcal.so|e964733aa12b61f7706e56767317ad5f652d29bf
 
-# Bluetooth - from dpl_sprout - QKQ1.191008.001 00WW_2_310
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|535491e4a8036125259bab4579a53cadcb08dcc3
+# Bluetooth - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|365c3de57a8a655da6b0882bf5411558025883e1
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|5d7ecc206682b4aeafc6d5d2cf3d5338e9af66c6
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|d4de3f73589623428d37f7779d06d017c5243b99
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|a30699357a0932152db3baf6534940c9407c0a8a
-vendor/lib64/libbt-hidlclient.so|1ab2068ff7c71355e6cf7055f1d28a76da303742
-vendor/lib64/libbtnv.so|f180361505dea193b4195deee824f9727f42f5c8
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|07e04d7936f0463aede02eb8182ec0e22485f467
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|14791034bf680b532a4ac1502ed447d3742c04bd
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|3ac2829b9062e6d81a56d3c43a70d268b49166a4
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|4e188cd7cc009ced6af7901f357005623dd0875a
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|df20addad1f9c1c8b342aeee1ff9a5fbc5cf8bb8
+vendor/lib64/libbt-hidlclient.so|69414712e85c8fabf9be9c697f0eaba470ab70eb
+vendor/lib64/libbtnv.so|f5b41bac778fb0b60725686968043c6caf67079d
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|0a7c45e0218295bd204fe9ac5e9cb773d0e78870
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|9cb28854dccc80bf96b5f8ef4940b34f8d8ee76c
 
-# Bluetooth (shared dependencies) - from dpl_sprout - QKQ1.191008.001 00WW_2_310
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|9ea9c15053bf6b3f30327855a655b4f8f5d30a07
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|b437aee7affdd6091bffcb995a791d1edd58467f
+# Bluetooth (shared dependencies) - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|d374b4deb0df088dfc6151c37385a9b125bf3427
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|c190ec6ecb995b556c30a214a8a7cf4894e72e5f
 
 # CNE - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
@@ -102,42 +102,40 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|0d98deabd652327f11735e1dcf14d3f7889
 vendor/lib64/vendor.qti.latency@2.0.so|279b8fcd9f7032dff71f10f5d1a3b36112b9205e
 
 # DPM - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
-product/bin/dpmd|d3e809a899e022967bf348447e7d4ef2c5b6a7de 
-product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5 
-product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669 
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09 
-product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d 
-product/framework/com.qti.dpmframework.jar|7adf5e0e96c155acfe66c7256e06e48c1ee35d13 
-product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad 
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb 
-product/lib64/libdpmctmgr.so|41a335924dedbed185edb21c568bbf13d8ca3708 
-product/lib64/libdpmfdmgr.so|0cab07c31341e765fe71d04186393ad9935a3f20 
-product/lib64/libdpmtcm.so|04be04dbf114d35c43e1454f30196dad1b6f6e04 
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|5b1535cb4201f56d6027f8a41cf159d45ca4941b 
-vendor/bin/dpmQmiMgr|c5c9ba878dac15a426fb2f0bee6d17537bb7c53d 
-vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68 
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb 
-vendor/lib64/libdpmqmihal.so|25d74c0e867f023b71a7c599ab6d213c7de2725d
+product/bin/dpmd|d3e809a899e022967bf348447e7d4ef2c5b6a7de
+product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
+product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
+product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
+product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
+product/framework/com.qti.dpmframework.jar|7adf5e0e96c155acfe66c7256e06e48c1ee35d13
+product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
+product/lib64/com.qualcomm.qti.dpm.api@1.0.so|4b2add3c929f68115a83c5e3fc43e25c56f3fe1b
+product/lib64/libdpmctmgr.so|476c42fa8300514d9dfefd984980b85081b42593
+product/lib64/libdpmfdmgr.so|7f34e2a0ea995d9f656ed85a44d52c713da4ecae
+product/lib64/libdpmframework.so|e1dcf23dde716a631cd84f441db075199c2e94f9
+product/lib64/libdpmtcm.so|96f2a4729f01c54b9a22a15e9679fc0d2c066477
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
+vendor/bin/dpmQmiMgr|60d1c2e662bb7525ac962a307d700a2707e8bb58
+vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a7d6305b0b9a3b80e8006b90990cd9112090fa05
+vendor/lib64/libdpmqmihal.so|903e732361dddd2dffdd3e9facf76180096710c8
 
-# DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
-system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
+# DRM and SEE - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
+vendor/bin/qseecomd|4ca1081d507622dbda844d572e45d8e863e13e9d
+vendor/lib64/libQSEEComAPI.so|60bc9c07a40c23dac26dbe1d4b7f8e4cab93dd0c
+vendor/lib64/libdrmfs.so|998a1f1e8be68a26349b2a075178d4ea6a56cc7a
+vendor/lib64/libdrmtime.so|0bf050eb0dd75e863fd81f9518a1e153782d0fb5
+vendor/lib64/librpmb.so|8eaa973512eec245291530817bfc910fbc471435
+vendor/lib64/libssd.so|9c4d94f6bbdc842191248875c7e5aec86b5118e8
 
-# DRM and SEE - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
-vendor/bin/qseecomd|03786ba1664aa7a6aca09b78139380c61d365e25
-vendor/lib64/libQSEEComAPI.so|8a79273f20de2bc9adba35d8b332a679c82d6ec6
-vendor/lib64/libdrmfs.so|a2cc69f55ecdfac9071c76f212f8e81b210e09cf
-vendor/lib64/libdrmtime.so|6a3b899ea9e03010768c70d54abc3b19d8c93998
-vendor/lib64/librpmb.so|1cbc7c3df7cae6e5c229c35d80113e72be145d9e
-vendor/lib64/libssd.so|2f9371b25a9774a4f4b1d1879aa47aa8b6f02195
+# Gatekeeper - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
+vendor/lib64/hw/gatekeeper.msm8937.so|500e503239be65dfdd6c8c201d7e0679b7a27fa8
 
-# Gatekeeper - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
-vendor/lib64/hw/gatekeeper.msm8937.so|dab0948ea31925e39ff723e0438f8f6c015c9946
-
-# GPS - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
-vendor/bin/hw/android.hardware.gnss@2.0-service-qti|100d86b36b6aeb49c927d792808b5c6b9ef232c1
-vendor/bin/loc_launcher|6fe9d0230143f4aa96ddb9c047abe3d003cc815a
-vendor/bin/lowi-server|5ba1d56afba2bc250c85f538fb8679b4e2f87bb9
-vendor/bin/xtra-daemon|d5ec5ab088d9828ec3c162636c97c7da60e7f631
+# GPS - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
+vendor/bin/hw/android.hardware.gnss@2.0-service-qti|a199db62516c837b2d18fff4fe75ea3c9912954c
+vendor/bin/loc_launcher|1565f326b4fd46d6dfacd0e0804254611892d019
+vendor/bin/lowi-server|fcbb7d072bf0c760f905b3ca532a2a27816c0dde
+vendor/bin/xtra-daemon|e961ac3ee4a98a43ea4e9e86a290a246a4599798
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|8e0b0596a13b8d653e6f5415c41d8a53bb12b73a
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml|8d7eafd68db9bbe7ec7a5c4d547f026869766081
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml|9b2f6691d6c224bcb9ab9a0d57adfb9e52f1b53e
@@ -428,8 +426,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|f3a3051e4a904268
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|ab552724f7d723a70a4e730dba52ab220d33a33e
 vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
-# RIL - from X00RD - QKQ1.191002.002 17.07.2003.405-20200330
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|dbf5b100a90b577d0473749c6de1a1b5760c61f6
+# RIL - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
+product/framework/qti-telephony-common.jar|6344e0d86ae4b5c3b01dea978d074fe0c7dee156
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
 
