@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 allow kernel debugfs_wlan:dir search;
+=======
+allow kernel self:capability kill;
+>>>>>>> ecc87cd... riva: sepolicy: Update denials
