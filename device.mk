@@ -181,6 +181,19 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(DEVICE_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8937
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
+
+# Soong namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)/hardware/qcom-caf/msm8996
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
